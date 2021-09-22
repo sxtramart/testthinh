@@ -7,6 +7,8 @@ const { join } = require("path");
 const { TOKEN, PREFIX } = require("./util/Util");
 const i18n = require("./util/i18n");
 
+var array = fs.readFileSync('thinh.txt','utf8').split("\n")
+
 const client = new Client({
   disableMentions: "everyone",
   restTimeOffset: 0
