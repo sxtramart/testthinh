@@ -6,7 +6,7 @@ const { readdirSync } = require("fs");
 const { join } = require("path");
 const { TOKEN, PREFIX } = require("./util/Util");
 const i18n = require("./util/i18n");
-
+var fs = require('fs')
 var array = fs.readFileSync('thinh.txt','utf8').split("\n")
 
 const client = new Client({
